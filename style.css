@@ -44,10 +44,12 @@ p {
 
 .section-p1 {
   padding: 40px 80px;
+  display: flex;
 }
 
 .section-m1 {
   margin: 40px 0;
+  text-align: center;
 }
 
 #header {
@@ -57,6 +59,10 @@ p {
   padding: 20px 80px;
   background-color: rgb(255, 231, 122);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -80,4 +86,73 @@ p {
 #navbar li a.active {
   color: #ff6f61;
   text-decoration: underline;
+}
+
+#hero {
+  background-image: url("Assets/shopping\ lady.jpg");
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 60px;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h1 {
+  margin-top: -120px;
+  margin-bottom: 30px;
+}
+#hero h2 {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  color: #ff6f61;
+}
+
+#hero button {
+  padding: 14px 80px 14px 65px;
+  background-color: #f51b08;
+  background-repeat: no-repeat;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#feature .feature-box {
+  text-align: center;
+  width: 240px;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff9d5;
+  border-radius: 4px;
+  margin: 15px;
+  margin-right: 50px;
+  position: relative;
+  left: 30%;
+}
+
+#feature .feature-box:hover {
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.5);
+}
+
+#feature-prod .fprod-box {
+  text-align: center;
+  width: 240px;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px solid #fff9d5;
+  border-radius: 4px;
+  margin: 15px;
+  margin-right: 50px;
+}
+
+.star {
+  color: #fbff00;
+  font-size: 20px;
+  display: inline;
 }

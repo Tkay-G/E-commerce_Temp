@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glamour Glow - Makeup Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
     <section id="header">
-      <a href="#"><img src="" class="logo" alt="logo" /></a>
+      <a href="#"><img src="Assets/logo.png" class="logo" alt="logo" /></a>
 
       <div>
         <ul id="navbar">
@@ -20,27 +24,61 @@
           <li><a href="contact.html">Contact</a></li>
           <li>
             <a href="cart.html"
-              ><img
-                src="Assets/shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
-                alt="cart"
-              />
-            </a>
+              ><i class="fa fa-shopping-basket" aria-hidden="true"></i
+            ></a>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Main Content -->
-    <section id="main-content">
+    <section id="hero">
       <h1>Welcome to Glamour Glow</h1>
-  
-      <h2>Your one-stop shop for all your makeup needs!</h2> 
-      <button class="btn">Shop Now</button>
 
+      <h2>
+        Your one-stop shop <br />
+        For all your fashion needs!
+      </h2>
+      <button class="btn">Shop Now</button>
+    </section>
+    <!---Feature-->
+    <section id="feature" class="section-p1">
+      <div class="feature-box">
+        <img src="Assets/download.jpg" alt="Feature 1" />
+        <h6>Order Online</h6>
+      </div>
+
+      <div class="feature-box">
+        <a href="blog.html"><img src="Assets/OIP.jpg" alt="Feature 2" /></a>
+        <h6>Blog</h6>
+      </div>
+    </section>
+
+    <section id="feature-prod" class="section-m1">
+      <div>
+        <h2>Featured Products</h2>
+        <p>Check out our latest and greatest products!</p>
+      </div>
+
+      <div class="prod-box">
+        <div class="prod-item">
+          <img style="width: 10%; height: 20%;" src="Assets/keagan-henman-XYtuOYfIg_M-unsplash.jpg" alt="Product 1" />
+            <div class="desc">
+              <span>monteys</span>
+                    <h5>Clean Graphic White T-shirt</h5>
+                      <div class="star"><i class="fas fa-star"></i></div>
+                      <div class="star"><i class="fas fa-star"></i></div>
+                      <div class="star"><i class="fas fa-star"></i></div>
+                      <div class="star"><i class="fas fa-star"></i></div>
+                      <div class="star"><i class="fas fa-star"></i></div>
+          </div>
+        </div>
+      </div>
+      
     <!-- Footer -->
     <footer>
       <p>&copy; 2025 Glamour Glow @tkaycodes</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
